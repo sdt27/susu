@@ -1,0 +1,24 @@
+<html>
+	<head>
+	
+	</head>
+	<meta charset="UTF-8">
+	<h1> 第一神拳 </h1>
+	<body>
+		<div>
+			<img src="img/2.png" id="photos" onclick="ppt()">
+		</div>
+	</body>
+
+	<script>
+		var count = 0;
+		// implement a function (Action) to display photos.
+		function ppt(){
+			// path of images	
+			var photo = ['img/1.png', 'img/2.png', 'img/3.png'];
+			document.getElementById("photos").src = photo[count++];
+			if(count == photo.length) 
+				count = 0;
+		}
+	</script>
+</html>
